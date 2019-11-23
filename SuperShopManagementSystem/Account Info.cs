@@ -10,26 +10,11 @@ using System.Windows.Forms;
 
 namespace SuperShopManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class Account_Info : Form
     {
-        public Form1()
+        public Account_Info()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonCustomer_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
