@@ -53,7 +53,7 @@
             // 
             this.buttonCustomer.Cursor = System.Windows.Forms.Cursors.No;
             this.buttonCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCustomer.Location = new System.Drawing.Point(74, 197);
+            this.buttonCustomer.Location = new System.Drawing.Point(107, 197);
             this.buttonCustomer.Margin = new System.Windows.Forms.Padding(6);
             this.buttonCustomer.Name = "buttonCustomer";
             this.buttonCustomer.Size = new System.Drawing.Size(178, 74);
@@ -66,7 +66,7 @@
             // 
             this.buttonManazer.Cursor = System.Windows.Forms.Cursors.No;
             this.buttonManazer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonManazer.Location = new System.Drawing.Point(264, 197);
+            this.buttonManazer.Location = new System.Drawing.Point(297, 197);
             this.buttonManazer.Margin = new System.Windows.Forms.Padding(6);
             this.buttonManazer.Name = "buttonManazer";
             this.buttonManazer.Size = new System.Drawing.Size(178, 74);
@@ -78,7 +78,7 @@
             // 
             this.buttonClark.Cursor = System.Windows.Forms.Cursors.No;
             this.buttonClark.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClark.Location = new System.Drawing.Point(454, 197);
+            this.buttonClark.Location = new System.Drawing.Point(487, 197);
             this.buttonClark.Margin = new System.Windows.Forms.Padding(6);
             this.buttonClark.Name = "buttonClark";
             this.buttonClark.Size = new System.Drawing.Size(178, 74);
