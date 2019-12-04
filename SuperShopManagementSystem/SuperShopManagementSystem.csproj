@@ -53,11 +53,12 @@
       <DependentUpon>AccountInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Customer.cs">
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Views\CustomerDashbordViews.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer.Designer.cs">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <Compile Include="Views\CustomerDashbordViews.Designer.cs">
+      <DependentUpon>CustomerDashbordViews.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -72,6 +73,8 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Database.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Products.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Program.cs" />
@@ -87,6 +90,12 @@
     </Compile>
     <Compile Include="Views\AddPerson.Designer.cs">
       <DependentUpon>AddPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ClarkDashbordviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ClarkDashbordviews.Designer.cs">
+      <DependentUpon>ClarkDashbordviews.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\ManazerDashboardView.cs">
       <SubType>Form</SubType>
@@ -109,8 +118,11 @@
     <EmbeddedResource Include="AccountInfo.resx">
       <DependentUpon>AccountInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer.resx">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <EmbeddedResource Include="Views\ClarkDashbordviews.resx">
+      <DependentUpon>ClarkDashbordviews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerDashbordViews.resx">
+      <DependentUpon>CustomerDashbordViews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

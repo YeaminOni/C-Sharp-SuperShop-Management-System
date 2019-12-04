@@ -32,6 +32,7 @@
             this.buttonManazer = new System.Windows.Forms.Button();
             this.buttonCustomer = new System.Windows.Forms.Button();
             this.Welcome = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonClark
@@ -43,7 +44,7 @@
             this.buttonClark.Name = "buttonClark";
             this.buttonClark.Size = new System.Drawing.Size(178, 74);
             this.buttonClark.TabIndex = 8;
-            this.buttonClark.Text = "Clark";
+            this.buttonClark.Text = "Clerk";
             this.buttonClark.UseVisualStyleBackColor = true;
             // 
             // buttonManazer
@@ -75,23 +76,38 @@
             // 
             this.Welcome.AutoEllipsis = true;
             this.Welcome.AutoSize = true;
-            this.Welcome.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Welcome.BackColor = System.Drawing.Color.Red;
             this.Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Welcome.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Welcome.Location = new System.Drawing.Point(334, 47);
+            this.Welcome.ForeColor = System.Drawing.Color.White;
+            this.Welcome.Location = new System.Drawing.Point(144, 40);
             this.Welcome.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Welcome.Name = "Welcome";
-            this.Welcome.Size = new System.Drawing.Size(160, 45);
+            this.Welcome.Size = new System.Drawing.Size(469, 45);
             this.Welcome.TabIndex = 5;
-            this.Welcome.Text = "Welcome";
+            this.Welcome.Text = "Welcome To Our Supershop ";
             this.Welcome.UseCompatibleTextRendering = true;
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.No;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(287, 204);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 74);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Manager";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.buttonManazer_Click);
             // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonClark);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonManazer);
             this.Controls.Add(this.buttonCustomer);
             this.Controls.Add(this.Welcome);
@@ -108,5 +124,6 @@
         private System.Windows.Forms.Button buttonManazer;
         private System.Windows.Forms.Button buttonCustomer;
         private System.Windows.Forms.Label Welcome;
+        private System.Windows.Forms.Button button1;
     }
 }

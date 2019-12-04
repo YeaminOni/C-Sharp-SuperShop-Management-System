@@ -14,7 +14,7 @@ namespace SuperShopManagementSystem.Models
         SqlConnection conn;
         public Users()
         {
-            conn = new SqlConnection("Server=DESKTOP-R30TBUF;Database=login;User Id=sa;Password=80659;");
+            conn = new SqlConnection("Server=NUR;Database=login;User Id=sa;Password=80659;");
 
         }
         //public void AddUser(User user)
@@ -28,24 +28,25 @@ namespace SuperShopManagementSystem.Models
 
 
         //}
-        public string AuthenticateUser(string username, string password)//have a problem...
+        public User AuthenticateUser(string username, string password)//have a problem...
         {
+            User u=null;
             conn.Open();
-            User u = null;
+          //  User u = null;
             string query = "SELECT * FROM login1 WHERE Username='" + username + "' and Password='" + password + "'";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
-        //       while (reader.Read())
-        //        {
-        //            u = new User();
-        //            u.Name = reader.GetString(reader.GetOrdinal("Name"));
-        //            u.Username = reader.GetString(reader.GetOrdinal("Username"));
-        //            u.Password = reader.GetString(reader.GetOrdinal("Password"));
-        //            u.Id = reader.GetInt32(reader.GetOrdinal("Id"));
-        //        }
-          conn.Close();
+            while (reader.Read())
+            {
+                u = new User();
+                //u.Name = reader.GetString(reader.GetOrdinal("Name"));
+                u.Username = reader.GetString(reader.GetOrdinal("Username"));
+                //u.Password = reader.GetString(reader.GetOrdinal("Password"));
+                //u.Id = reader.GetInt32(reader.GetOrdinal("Id"));
+            }
+            conn.Close();
 
-           return password;
+            return u;
 
         }
         //public void DeleteUser(User user)

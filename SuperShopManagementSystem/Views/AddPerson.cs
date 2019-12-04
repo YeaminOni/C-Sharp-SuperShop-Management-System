@@ -21,5 +21,25 @@ namespace SuperShopManagementSystem.Views
         {
 
         }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddPerson_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonHome_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            new ManazerDashboardView().Show();
+        }
     }
 }

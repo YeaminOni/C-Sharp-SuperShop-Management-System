@@ -51,5 +51,25 @@ namespace SuperShopManagementSystem
         {
 
         }
+
+        private void Customer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAccountInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPurchaseInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

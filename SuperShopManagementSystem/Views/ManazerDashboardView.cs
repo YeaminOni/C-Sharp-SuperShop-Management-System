@@ -21,5 +21,26 @@ namespace SuperShopManagementSystem.Views
         {
 
         }
+
+        private void buttonAddPerson_Click(object sender, EventArgs e)
+        {
+            new AddPerson().Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAddProducts_Click(object sender, EventArgs e)
+        {
+          //  new AddProductsViews().Show();
+        }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            new Start().Show();
+        }
     }
 }

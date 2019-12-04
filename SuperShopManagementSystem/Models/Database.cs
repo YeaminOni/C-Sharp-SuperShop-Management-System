@@ -10,13 +10,13 @@ namespace SuperShopManagementSystem.Models
     {
 
         public Users Users { get; set; }
-        //public Products Products { get; set; }
+         //   public Products Products { get; set; }
         //public Categories Categories { get; set; }
 
         public Database()
         {
             Users = new Users();
-           // Products = new Products();
+            //Products = new Products();
             //Categories = new Categories();
         }
     }
