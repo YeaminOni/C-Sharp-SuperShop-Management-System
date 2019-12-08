@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginView));
             this.buttonLogin = new System.Windows.Forms.Button();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@
             this.textBoxPassword.Font = new System.Drawing.Font("Lucida Console", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(316, 176);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(303, 34);
             this.textBoxPassword.TabIndex = 10;
             // 
@@ -60,31 +62,31 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label3.Font = new System.Drawing.Font("Lucida Console", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(153, 179);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 27);
+            this.label3.Size = new System.Drawing.Size(142, 32);
             this.label3.TabIndex = 9;
             this.label3.Text = "Password";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBoxUname
             // 
-            this.textBoxUname.Font = new System.Drawing.Font("Lucida Console", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUname.Font = new System.Drawing.Font("Malgun Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUname.Location = new System.Drawing.Point(316, 124);
             this.textBoxUname.Name = "textBoxUname";
-            this.textBoxUname.Size = new System.Drawing.Size(303, 34);
+            this.textBoxUname.Size = new System.Drawing.Size(303, 43);
             this.textBoxUname.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label2.Font = new System.Drawing.Font("Lucida Console", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(153, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 27);
+            this.label2.Size = new System.Drawing.Size(150, 32);
             this.label2.TabIndex = 7;
             this.label2.Text = "Username";
             // 
@@ -112,6 +114,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginView";
             this.Text = "LoginView";
             this.Load += new System.EventHandler(this.LoginView_Load);

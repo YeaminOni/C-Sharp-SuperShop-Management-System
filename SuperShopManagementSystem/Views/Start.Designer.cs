@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
             this.buttonClark = new System.Windows.Forms.Button();
             this.buttonManazer = new System.Windows.Forms.Button();
             this.buttonCustomer = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@
             this.buttonClark.TabIndex = 8;
             this.buttonClark.Text = "Clerk";
             this.buttonClark.UseVisualStyleBackColor = true;
+            this.buttonClark.Click += new System.EventHandler(this.buttonClark_Click);
             // 
             // buttonManazer
             // 
@@ -71,6 +73,7 @@
             this.buttonCustomer.TabIndex = 6;
             this.buttonCustomer.Text = "Customer";
             this.buttonCustomer.UseVisualStyleBackColor = true;
+            this.buttonCustomer.Click += new System.EventHandler(this.buttonCustomer_Click);
             // 
             // Welcome
             // 
@@ -111,8 +114,10 @@
             this.Controls.Add(this.buttonManazer);
             this.Controls.Add(this.buttonCustomer);
             this.Controls.Add(this.Welcome);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Start";
             this.Text = "Start";
+            this.Load += new System.EventHandler(this.Start_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

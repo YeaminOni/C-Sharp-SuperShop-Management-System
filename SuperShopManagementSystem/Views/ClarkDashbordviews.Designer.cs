@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClarkDashbordviews));
             this.buttonHome = new System.Windows.Forms.Button();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.buttonSellProducts = new System.Windows.Forms.Button();
@@ -121,6 +122,7 @@
             this.Controls.Add(this.buttonSellProducts);
             this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.buttonHome);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ClarkDashbordviews";
             this.Text = "ClarkDashboadView";
             this.Load += new System.EventHandler(this.ClarkDashbordviews_Load);

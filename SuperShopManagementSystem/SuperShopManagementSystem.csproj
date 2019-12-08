@@ -52,8 +52,20 @@
     <Compile Include="AccountInfo.Designer.cs">
       <DependentUpon>AccountInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\UserContoller.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Categories.cs" />
+    <Compile Include="Models\UserType.cs" />
+    <Compile Include="Models\UserTypes.cs" />
+    <Compile Include="Views\AddProductViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddProductViews.Designer.cs">
+      <DependentUpon>AddProductViews.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CustomerDashbordViews.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,11 +97,11 @@
     <Compile Include="PurchaseInfo.Designer.cs">
       <DependentUpon>PurchaseInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\AddPerson.cs">
+    <Compile Include="Views\AddUserViews.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\AddPerson.Designer.cs">
-      <DependentUpon>AddPerson.cs</DependentUpon>
+    <Compile Include="Views\AddUserViews.Designer.cs">
+      <DependentUpon>AddUserViews.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\ClarkDashbordviews.cs">
       <SubType>Form</SubType>
@@ -118,6 +130,9 @@
     <EmbeddedResource Include="AccountInfo.resx">
       <DependentUpon>AccountInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddProductViews.resx">
+      <DependentUpon>AddProductViews.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ClarkDashbordviews.resx">
       <DependentUpon>ClarkDashbordviews.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,12 +153,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="PurchaseInfo.resx">
       <DependentUpon>PurchaseInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\AddPerson.resx">
-      <DependentUpon>AddPerson.cs</DependentUpon>
+    <EmbeddedResource Include="Views\AddUserViews.resx">
+      <DependentUpon>AddUserViews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
@@ -167,6 +183,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\10-512.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

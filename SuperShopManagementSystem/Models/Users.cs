@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,26 +15,16 @@ namespace SuperShopManagementSystem.Models
         SqlConnection conn;
         public Users()
         {
-            conn = new SqlConnection("Server=NUR;Database=login;User Id=sa;Password=80659;");
+            conn = new SqlConnection("Server=NUR;Database=SuperShopManagementSystem;User Id=sa;Password=80659;");
 
         }
-        //public void AddUser(User user)
-        //{
-        //    //add user to the database
-        //    conn.Open();
-        //    string query = "INSERT INTO Users (Name,Password) VALUES('" + user.Name + "','" + user.Username + "','" + user.Password + "')";
-        //    SqlCommand cmd = new SqlCommand(query, conn);
-        //    int result = cmd.ExecuteNonQuery();
-        //    conn.Close();
-
-
-        //}
+      
         public User AuthenticateUser(string username, string password)//have a problem...
         {
             User u=null;
             conn.Open();
           //  User u = null;
-            string query = "SELECT * FROM login1 WHERE Username='" + username + "' and Password='" + password + "'";
+            string query = "SELECT * FROM Usears WHERE UserName='" + username + "' and Password='" + password + "'";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -41,7 +32,7 @@ namespace SuperShopManagementSystem.Models
                 u = new User();
                 //u.Name = reader.GetString(reader.GetOrdinal("Name"));
                 u.Username = reader.GetString(reader.GetOrdinal("Username"));
-                //u.Password = reader.GetString(reader.GetOrdinal("Password"));
+                u.Password = reader.GetString(reader.GetOrdinal("Password"));
                 //u.Id = reader.GetInt32(reader.GetOrdinal("Id"));
             }
             conn.Close();
@@ -49,21 +40,77 @@ namespace SuperShopManagementSystem.Models
             return u;
 
         }
-        //public void DeleteUser(User user)
-        //{
-        //    //delete user from database
+       
 
-        //}
+        public void AddUser(User user)
+        {
+                        /*add user to the database*/
+            conn.Open();
+            string query = "INSERT INTO Usears (Id,Username,Name,Catagory,Password) VALUES ('" + user.Id + "', '"+ user.Username +"','"+ user.Name + "', '" + user.Category + "','"+ user.Password+"')";
+           SqlCommand cmd = new SqlCommand(query, conn);
+            int result = cmd.ExecuteNonQuery();
+            conn.Close();
+
+
+        }
+
+
+        public void DeleteUser(User user)
+        {
+         //delete user from database
+
+        }
         //public void UpdateUser(User user)
         //{
         //    //update user into database
         //}
-        //public User GetUser(string username)
+
+
+        public User GetUser(User user)
+
+        {
+            //delete user from database
+
+            User u = new User();
+            return u;
+
+        }
+
+        //public ArrayList GetAllUser()
         //{
-            
+        //    ArrayList Uaers = new ArrayList();
+
         //    User user = new User();
-        //    return user;
+        //    conn.Open();
+        //    string query = "SELECT * FROM Users";
+        //    SqlCommand cmd = new SqlCommand(query, conn);
+        //    SqlDataReader reader = cmd.ExecuteReader();
+        //    while (reader.Read())
+        //    {
+
+        //        User u = new User()
+        //        {
+        //            Id = reader.GetString(reader.GetOrdinal("Id")),
+        //            Username = reader.GetString(reader.GetOrdinal("Username")),
+        //            Name = reader.GetString(reader.GetOrdinal("Name")),
+        //            Category = reader.GetString(reader.GetOrdinal("Category")),
+        //            Password = reader.GetString(reader.GetOrdinal("Password")),
+
+
+
+
+        //        };
+        //       // Users.AddUser(u);
+
+
+
+        //    }
+        //    conn.Close();
+        //    //return User;
+
+
         //}
+
 
 
     }

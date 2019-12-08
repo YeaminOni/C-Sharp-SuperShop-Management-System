@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManazerDashboardView));
             this.buttonAddPerson = new System.Windows.Forms.Button();
             this.buttonAddProducts = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.buttonSellProducts = new System.Windows.Forms.Button();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.buttonHome = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // buttonAddPerson
@@ -133,12 +135,22 @@
             this.buttonHome.Text = "Home";
             this.buttonHome.UseVisualStyleBackColor = false;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.MenuHighlight;
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dateTimePicker1.Location = new System.Drawing.Point(613, 5);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePicker1.TabIndex = 22;
+            // 
             // ManazerDashboardView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.buttonAccountInfo);
@@ -147,8 +159,11 @@
             this.Controls.Add(this.buttonHome);
             this.Controls.Add(this.buttonAddProducts);
             this.Controls.Add(this.buttonAddPerson);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "ManazerDashboardView";
             this.Text = "ManagerDashboardView";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ResizeBegin += new System.EventHandler(this.ManazerDashboardView_ResizeBegin);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,5 +180,6 @@
         private System.Windows.Forms.Button buttonSellProducts;
         private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.Button buttonHome;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

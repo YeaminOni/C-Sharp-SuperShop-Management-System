@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SuperShopManagementSystem.Models;
 
 namespace SuperShopManagementSystem.Models
 {
-    class Product
+   public class Product
     {
-        public int Id { get; set; }
+        public string ProductId { get; set; }
         public string ProductName { get; set; }
-        public int ProductPrice { get; set; }
-        public int ProductQty { get; set; }
-        public int CategoryId { get; set; }
+        public string ProductPrice { get; set; }
+        public string ProductQuantity { get; set; }
+        public string Category{ get; set; }
     }
 }

@@ -24,5 +24,20 @@ namespace SuperShopManagementSystem.Views
             new LoginView().Show();
 
         }
+
+        private void buttonCustomer_Click(object sender, EventArgs e)
+        {
+            new AddUserViews().Show();
+        }
+
+        private void buttonClark_Click(object sender, EventArgs e)
+        {
+           new ClarkDashbordviews().Show();
+        }
+
+        private void Start_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

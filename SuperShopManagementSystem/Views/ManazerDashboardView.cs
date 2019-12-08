@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SuperShopManagementSystem.Controllers;
 
 namespace SuperShopManagementSystem.Views
 {
@@ -24,7 +25,7 @@ namespace SuperShopManagementSystem.Views
 
         private void buttonAddPerson_Click(object sender, EventArgs e)
         {
-            new AddPerson().Show();
+            new AddUserViews().Show();
 
         }
 
@@ -35,7 +36,12 @@ namespace SuperShopManagementSystem.Views
 
         private void buttonAddProducts_Click(object sender, EventArgs e)
         {
-          //  new AddProductsViews().Show();
+            var categories = CategoryController.GetAllCategories();
+            var products = ProductController.GetAllProduct();
+            new AddProductViews(categories, products).Show();
+
+
+           
         }
 
         private void buttonLogOut_Click(object sender, EventArgs e)
