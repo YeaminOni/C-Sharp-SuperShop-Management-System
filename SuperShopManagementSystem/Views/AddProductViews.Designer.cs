@@ -45,7 +45,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxProductId = new System.Windows.Forms.TextBox();
             this.labelPasseord = new System.Windows.Forms.Label();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllProducts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewAllProducts
@@ -75,14 +77,14 @@
             // 
             // buttonHome
             // 
-            this.buttonHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonHome.BackColor = System.Drawing.Color.Green;
             this.buttonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHome.ForeColor = System.Drawing.Color.White;
             this.buttonHome.Location = new System.Drawing.Point(20, 40);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.Size = new System.Drawing.Size(141, 41);
             this.buttonHome.TabIndex = 38;
-            this.buttonHome.Text = "Home";
+            this.buttonHome.Text = "Back";
             this.buttonHome.UseVisualStyleBackColor = false;
             this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
             // 
@@ -91,7 +93,7 @@
             this.buttonAddProduct.BackColor = System.Drawing.Color.Lime;
             this.buttonAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAddProduct.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonAddProduct.Location = new System.Drawing.Point(347, 348);
+            this.buttonAddProduct.Location = new System.Drawing.Point(342, 383);
             this.buttonAddProduct.Name = "buttonAddProduct";
             this.buttonAddProduct.Size = new System.Drawing.Size(143, 33);
             this.buttonAddProduct.TabIndex = 37;
@@ -136,8 +138,10 @@
             // labelCatagory
             // 
             this.labelCatagory.AutoSize = true;
+            this.labelCatagory.BackColor = System.Drawing.Color.White;
             this.labelCatagory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCatagory.Location = new System.Drawing.Point(56, 314);
+            this.labelCatagory.ForeColor = System.Drawing.Color.Black;
+            this.labelCatagory.Location = new System.Drawing.Point(65, 311);
             this.labelCatagory.Name = "labelCatagory";
             this.labelCatagory.Size = new System.Drawing.Size(96, 20);
             this.labelCatagory.TabIndex = 30;
@@ -146,7 +150,9 @@
             // labelUserName
             // 
             this.labelUserName.AutoSize = true;
+            this.labelUserName.BackColor = System.Drawing.Color.White;
             this.labelUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserName.ForeColor = System.Drawing.Color.Black;
             this.labelUserName.Location = new System.Drawing.Point(40, 237);
             this.labelUserName.Name = "labelUserName";
             this.labelUserName.Size = new System.Drawing.Size(126, 20);
@@ -156,7 +162,9 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
+            this.labelName.BackColor = System.Drawing.Color.White;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.ForeColor = System.Drawing.Color.Black;
             this.labelName.Location = new System.Drawing.Point(2, 276);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(159, 20);
@@ -166,8 +174,9 @@
             // labelId
             // 
             this.labelId.AutoSize = true;
+            this.labelId.BackColor = System.Drawing.Color.White;
             this.labelId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelId.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelId.ForeColor = System.Drawing.Color.Black;
             this.labelId.Location = new System.Drawing.Point(23, 195);
             this.labelId.Name = "labelId";
             this.labelId.Size = new System.Drawing.Size(143, 24);
@@ -209,12 +218,20 @@
             // labelPasseord
             // 
             this.labelPasseord.AutoSize = true;
+            this.labelPasseord.BackColor = System.Drawing.Color.White;
             this.labelPasseord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPasseord.ForeColor = System.Drawing.Color.Black;
             this.labelPasseord.Location = new System.Drawing.Point(65, 153);
             this.labelPasseord.Name = "labelPasseord";
             this.labelPasseord.Size = new System.Drawing.Size(102, 20);
             this.labelPasseord.TabIndex = 44;
             this.labelPasseord.Text = "Product Id :";
+            this.labelPasseord.Click += new System.EventHandler(this.labelPasseord_Click);
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
             // 
             // AddProductViews
             // 
@@ -244,6 +261,7 @@
             this.Text = "AddProductViews";
             this.Load += new System.EventHandler(this.AddProductViews_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllProducts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +284,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxProductId;
         private System.Windows.Forms.Label labelPasseord;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
     }
 }

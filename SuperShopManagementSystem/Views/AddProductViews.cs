@@ -88,5 +88,10 @@ namespace SuperShopManagementSystem.Views
         {
 
         }
+
+        private void labelPasseord_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

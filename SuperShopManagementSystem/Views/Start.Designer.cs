@@ -40,7 +40,7 @@
             this.Welcome.BackColor = System.Drawing.Color.Red;
             this.Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Welcome.ForeColor = System.Drawing.Color.White;
-            this.Welcome.Location = new System.Drawing.Point(144, 40);
+            this.Welcome.Location = new System.Drawing.Point(185, 60);
             this.Welcome.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Welcome.Name = "Welcome";
             this.Welcome.Size = new System.Drawing.Size(469, 45);
@@ -51,15 +51,16 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Cursor = System.Windows.Forms.Cursors.No;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(577, 351);
+            this.button1.Location = new System.Drawing.Point(527, 418);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 74);
+            this.button1.Size = new System.Drawing.Size(198, 65);
             this.button1.TabIndex = 7;
             this.button1.Text = "LogIn Now";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.buttonManazer_Click);
             // 
             // Start
@@ -67,6 +68,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1081, 565);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Welcome);

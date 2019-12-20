@@ -40,21 +40,21 @@
             // 
             this.labelSearch.AutoSize = true;
             this.labelSearch.BackColor = System.Drawing.Color.Red;
-            this.labelSearch.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearch.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSearch.ForeColor = System.Drawing.Color.White;
-            this.labelSearch.Location = new System.Drawing.Point(76, 165);
+            this.labelSearch.Location = new System.Drawing.Point(38, 161);
             this.labelSearch.Name = "labelSearch";
-            this.labelSearch.Size = new System.Drawing.Size(133, 22);
+            this.labelSearch.Size = new System.Drawing.Size(156, 26);
             this.labelSearch.TabIndex = 5;
             this.labelSearch.Text = "Product Search";
             this.labelSearch.Click += new System.EventHandler(this.labelSearch_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(222, 165);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(200, 158);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(561, 22);
+            this.textBox1.Size = new System.Drawing.Size(619, 29);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
@@ -66,7 +66,7 @@
             this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.Font = new System.Drawing.Font("Lucida Console", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(260, 9);
+            this.label1.Location = new System.Drawing.Point(302, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(355, 29);
             this.label1.TabIndex = 10;
@@ -78,9 +78,9 @@
             this.listBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxSearch.FormattingEnabled = true;
             this.listBoxSearch.ItemHeight = 16;
-            this.listBoxSearch.Location = new System.Drawing.Point(222, 193);
+            this.listBoxSearch.Location = new System.Drawing.Point(191, 193);
             this.listBoxSearch.Name = "listBoxSearch";
-            this.listBoxSearch.Size = new System.Drawing.Size(561, 196);
+            this.listBoxSearch.Size = new System.Drawing.Size(628, 244);
             this.listBoxSearch.TabIndex = 11;
             this.listBoxSearch.Visible = false;
             this.listBoxSearch.SelectedIndexChanged += new System.EventHandler(this.listBoxSearch_SelectedIndexChanged);
@@ -89,7 +89,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.Lime;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.Location = new System.Drawing.Point(444, 87);
+            this.buttonBack.Location = new System.Drawing.Point(43, 82);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(113, 41);
             this.buttonBack.TabIndex = 12;
@@ -102,6 +102,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1081, 565);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.listBoxSearch);
