@@ -32,7 +32,6 @@
             this.buttonHome = new System.Windows.Forms.Button();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.buttonSellProducts = new System.Windows.Forms.Button();
-            this.buttonAccountInfo = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -48,13 +47,14 @@
             this.buttonHome.TabIndex = 10;
             this.buttonHome.Text = "Home";
             this.buttonHome.UseVisualStyleBackColor = false;
+            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
             // 
             // buttonLogOut
             // 
             this.buttonLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogOut.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonLogOut.Location = new System.Drawing.Point(619, 55);
+            this.buttonLogOut.Location = new System.Drawing.Point(488, 55);
             this.buttonLogOut.Name = "buttonLogOut";
             this.buttonLogOut.Size = new System.Drawing.Size(141, 41);
             this.buttonLogOut.TabIndex = 11;
@@ -67,31 +67,20 @@
             this.buttonSellProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonSellProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSellProducts.ForeColor = System.Drawing.Color.White;
-            this.buttonSellProducts.Location = new System.Drawing.Point(325, 55);
+            this.buttonSellProducts.Location = new System.Drawing.Point(194, 55);
             this.buttonSellProducts.Name = "buttonSellProducts";
             this.buttonSellProducts.Size = new System.Drawing.Size(141, 41);
             this.buttonSellProducts.TabIndex = 12;
             this.buttonSellProducts.Text = "Sell Products";
             this.buttonSellProducts.UseVisualStyleBackColor = false;
-            // 
-            // buttonAccountInfo
-            // 
-            this.buttonAccountInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonAccountInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAccountInfo.ForeColor = System.Drawing.Color.White;
-            this.buttonAccountInfo.Location = new System.Drawing.Point(178, 55);
-            this.buttonAccountInfo.Name = "buttonAccountInfo";
-            this.buttonAccountInfo.Size = new System.Drawing.Size(141, 41);
-            this.buttonAccountInfo.TabIndex = 13;
-            this.buttonAccountInfo.Text = "Account Info";
-            this.buttonAccountInfo.UseVisualStyleBackColor = false;
+            this.buttonSellProducts.Click += new System.EventHandler(this.buttonSellProducts_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(472, 55);
+            this.button4.Location = new System.Drawing.Point(341, 55);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(141, 41);
             this.button4.TabIndex = 14;
@@ -114,11 +103,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1081, 565);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.buttonAccountInfo);
             this.Controls.Add(this.buttonSellProducts);
             this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.buttonHome);
@@ -136,7 +124,6 @@
         private System.Windows.Forms.Button buttonHome;
         private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.Button buttonSellProducts;
-        private System.Windows.Forms.Button buttonAccountInfo;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
     }

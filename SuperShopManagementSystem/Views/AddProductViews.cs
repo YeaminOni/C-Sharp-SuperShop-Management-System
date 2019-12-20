@@ -74,5 +74,19 @@ namespace SuperShopManagementSystem.Views
         {
 
         }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            new ManazerDashboardView().Show();
+            
+            // Visible = false;
+            //this.Close();
+            this.Hide();
+        }
+
+        private void comboBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

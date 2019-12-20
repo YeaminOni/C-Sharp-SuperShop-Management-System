@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using SuperShopManagementSystem.Controllers;
 
 namespace SuperShopManagementSystem.Models
 {
@@ -15,23 +16,10 @@ namespace SuperShopManagementSystem.Models
         {
             conn = new SqlConnection("Server=NUR;Database=SuperShopManagementSystem;User Id=sa;Password=80659;");
         }
-        public void AddUserType(Category c)
+   
+        public ArrayList GetAllUserTypes()
         {
-        }
-        public void DeleteUserType(Category c)
-        {
-        }
-        public void UpdateUserTypes(Category c)
-        {
-        }
-        public Category GetUserTypes(string CategoryName)
-        {
-            Category c = new Category();
-            return c;
-        }
-        public ArrayList GetAllUserType()
-        {
-            ArrayList categories = new ArrayList();
+            ArrayList UserType = new ArrayList();
             conn.Open();
             string query = "SELECT * FROM UserType";
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -40,13 +28,13 @@ namespace SuperShopManagementSystem.Models
             {
                 UserType temp = new UserType();
                 temp.Id = reader.GetInt32(reader.GetOrdinal("Id"));
-                temp.Category = reader.GetString(reader.GetOrdinal("Category"));
-                categories.Add(temp);
+                temp.TypeName = reader.GetString(reader.GetOrdinal("UserType"));
+                UserType.Add(temp);
 
 
             }
             conn.Close();
-            return categories;
+            return UserType;
         }
     }
 }

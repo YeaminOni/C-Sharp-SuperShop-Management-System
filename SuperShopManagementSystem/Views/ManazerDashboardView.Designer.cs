@@ -109,6 +109,7 @@
             this.buttonSellProducts.TabIndex = 18;
             this.buttonSellProducts.Text = "Sell Products";
             this.buttonSellProducts.UseVisualStyleBackColor = false;
+            this.buttonSellProducts.Click += new System.EventHandler(this.buttonSellProducts_Click);
             // 
             // buttonLogOut
             // 
@@ -148,8 +149,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1081, 565);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);

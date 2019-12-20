@@ -10,7 +10,7 @@ namespace SuperShopManagementSystem.Models
     {
 
         public Users Users { get; set; }
-        public UserType UserType { get; set; }
+        public UserTypes UserTypes { get; set; }
 
         public Products Products { get; set; }
        public Categories Categories { get; set; }
@@ -19,8 +19,9 @@ namespace SuperShopManagementSystem.Models
         {
             Users = new Users();
             Products = new Products();
-            UserType = new UserType();
+            UserTypes = new UserTypes();
             Categories = new Categories();
+
         }
     }
 }

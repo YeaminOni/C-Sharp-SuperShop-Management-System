@@ -19,6 +19,11 @@ namespace SuperShopManagementSystem.Views
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
+            new Start().Show();
+
+          
+            //this.Close();
+            this.Hide();
 
         }
 
@@ -30,6 +35,23 @@ namespace SuperShopManagementSystem.Views
         private void ClarkDashbordviews_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonSellProducts_Click(object sender, EventArgs e)
+        {
+            new Sales().Show();
+            // Visible = false;
+            //this.Close();
+            this.Hide();
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            //new ClarkDashbordviews().Show();
+            
+            // Visible = false;
+            //this.Close();
+            //this.Hide();
         }
     }
 }

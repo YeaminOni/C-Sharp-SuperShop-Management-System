@@ -26,6 +26,10 @@ namespace SuperShopManagementSystem.Views
         private void buttonAddPerson_Click(object sender, EventArgs e)
         {
             new AddUserViews().Show();
+            
+            // Visible = false;
+            //this.Close();
+            this.Hide();
 
         }
 
@@ -39,14 +43,30 @@ namespace SuperShopManagementSystem.Views
             var categories = CategoryController.GetAllCategories();
             var products = ProductController.GetAllProduct();
             new AddProductViews(categories, products).Show();
+         
+            // Visible = false;
+            //this.Close();
+            this.Hide();
 
 
-           
+
         }
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
             new Start().Show();
+            
+            // Visible = false;
+            //this.Close();
+            this.Hide();
+        }
+
+        private void buttonSellProducts_Click(object sender, EventArgs e)
+        {
+            new Sales().Show();
+            // Visible = false;
+            //this.Close();
+            this.Hide();
         }
     }
 }

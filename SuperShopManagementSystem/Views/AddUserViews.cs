@@ -20,11 +20,10 @@ namespace SuperShopManagementSystem.Views
             InitializeComponent();
 
             //????????????????
+          
+          
 
-            comboBoxUserType.DataSource = textBoxUserType;
-            comboBoxUserType.DisplayMember = "UserType";
-            comboBoxUserType.DisplayMember = "Id";
-            //dataGridViewAddUsers.DataSource = user;
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -39,6 +38,12 @@ namespace SuperShopManagementSystem.Views
 
         private void AddPerson_Load(object sender, EventArgs e)
         {
+            comboBoxUserType.DataSource = UserTypesControler.GetAllUserTypes();
+
+            // comboBoxUserType.DisplayMember = "UserName";
+            comboBoxUserType.ValueMember = "TypeName";
+            // comboBoxUserType.DisplayMember = "UserType";
+            dataGridViewAddUsers.DataSource = UserController.GetAllUsers();
 
         }
 
@@ -50,13 +55,17 @@ namespace SuperShopManagementSystem.Views
         private void buttonHome_Click(object sender, EventArgs e)
         {
             new ManazerDashboardView().Show();   // go to home 
+            
+            // Visible = false;
+            //this.Close();
+            this.Hide();
         }
 
         private void buttonAddUser_Click(object sender, EventArgs e)
         {
             // add Parson
-            var ut = comboBoxUserType.SelectedItem;
-            UserController.AddUser(  textBoxId.Text,   textBoxUsername.Text,textBoxName.Text,textBoxUserType.Text,textBoxPassword.Text);
+            //var ut = comboBoxUserType.SelectedItem;
+            UserController.AddUser(  textBoxId.Text,   textBoxUsername.Text,textBoxName.Text, comboBoxUserType.Text, textBoxPassword.Text);
             //dataGridViewAllUser.DataSource = UserController.GetAllUser();
         }
 
@@ -72,12 +81,28 @@ namespace SuperShopManagementSystem.Views
 
         private void RowChanged(object sender, DataGridViewRowStateChangedEventArgs e)
         {
-
+            if (e.StateChanged != DataGridViewElementStates.Selected) return;
+            var c = dataGridViewAddUsers.SelectedRows[0].Cells[3].Value;
         }
 
         private void Pro(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+
+        private void EditUser(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow rw = dataGridViewAddUsers.CurrentRow;
+            // MessageBox.Show(rw.Cells["Id"].Value.ToString());
+            string Id = rw.Cells["Id"].Value.ToString();
+            string Username = rw.Cells["Username"].Value.ToString();
+            string UserType = rw.Cells["UserType"].Value.ToString();
+            string Name = rw.Cells["Name"].Value.ToString();
+            string Password = rw.Cells["PassWord"].Value.ToString();
+
+
+            UserController.UpdateUser(Id,Username,Name,UserType, Password );
         }
     }
 }

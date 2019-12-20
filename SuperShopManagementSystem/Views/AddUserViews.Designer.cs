@@ -37,13 +37,12 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.labelPasseord = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.comboBoxUserType = new System.Windows.Forms.ComboBox();
             this.buttonAddUser = new System.Windows.Forms.Button();
             this.buttonHome = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewAddUsers = new System.Windows.Forms.DataGridView();
-            this.textBoxUserType = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAddUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,20 +122,11 @@
             this.labelPasseord.TabIndex = 8;
             this.labelPasseord.Text = "Password :";
             // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(127, 264);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(319, 26);
-            this.textBoxPassword.TabIndex = 9;
-            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
-            // 
             // comboBoxUserType
             // 
             this.comboBoxUserType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxUserType.FormattingEnabled = true;
-            this.comboBoxUserType.Location = new System.Drawing.Point(100, 400);
+            this.comboBoxUserType.Location = new System.Drawing.Point(128, 227);
             this.comboBoxUserType.Name = "comboBoxUserType";
             this.comboBoxUserType.Size = new System.Drawing.Size(313, 28);
             this.comboBoxUserType.TabIndex = 10;
@@ -173,7 +163,7 @@
             this.label2.BackColor = System.Drawing.Color.Red;
             this.label2.Font = new System.Drawing.Font("Lucida Console", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(221, 9);
+            this.label2.Location = new System.Drawing.Point(283, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(337, 29);
             this.label2.TabIndex = 24;
@@ -181,30 +171,31 @@
             // 
             // dataGridViewAddUsers
             // 
+            this.dataGridViewAddUsers.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewAddUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAddUsers.Location = new System.Drawing.Point(474, 111);
+            this.dataGridViewAddUsers.Location = new System.Drawing.Point(474, 100);
             this.dataGridViewAddUsers.Name = "dataGridViewAddUsers";
-            this.dataGridViewAddUsers.Size = new System.Drawing.Size(408, 245);
+            this.dataGridViewAddUsers.Size = new System.Drawing.Size(460, 245);
             this.dataGridViewAddUsers.TabIndex = 25;
             this.dataGridViewAddUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Pro);
             this.dataGridViewAddUsers.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.RowChanged);
             this.dataGridViewAddUsers.SelectionChanged += new System.EventHandler(this.dataGridViewAllUser_SelectionChanged);
             // 
-            // textBoxUserType
+            // textBoxPassword
             // 
-            this.textBoxUserType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUserType.Location = new System.Drawing.Point(128, 227);
-            this.textBoxUserType.Name = "textBoxUserType";
-            this.textBoxUserType.Size = new System.Drawing.Size(319, 26);
-            this.textBoxUserType.TabIndex = 26;
+            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Location = new System.Drawing.Point(127, 264);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(319, 26);
+            this.textBoxPassword.TabIndex = 9;
+            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // AddUserViews
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(894, 463);
-            this.Controls.Add(this.textBoxUserType);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1081, 565);
             this.Controls.Add(this.dataGridViewAddUsers);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonHome);
@@ -239,12 +230,11 @@
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.Label labelPasseord;
-        private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.ComboBox comboBoxUserType;
         private System.Windows.Forms.Button buttonAddUser;
         private System.Windows.Forms.Button buttonHome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridViewAddUsers;
-        private System.Windows.Forms.TextBox textBoxUserType;
+        private System.Windows.Forms.TextBox textBoxPassword;
     }
 }

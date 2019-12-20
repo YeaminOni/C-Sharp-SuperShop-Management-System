@@ -56,6 +56,7 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\UserContoller.cs" />
+    <Compile Include="Controllers\UserTypesControler.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Categories.cs" />
     <Compile Include="Models\UserType.cs" />
@@ -121,6 +122,12 @@
     <Compile Include="Views\LoginView.Designer.cs">
       <DependentUpon>LoginView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Start.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +174,9 @@
     <EmbeddedResource Include="Views\ManazerDashboardView.resx">
       <DependentUpon>ManazerDashboardView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +195,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\10-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pro.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

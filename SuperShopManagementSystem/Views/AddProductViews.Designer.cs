@@ -50,6 +50,7 @@
             // 
             // dataGridViewAllProducts
             // 
+            this.dataGridViewAllProducts.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewAllProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAllProducts.Location = new System.Drawing.Point(539, 132);
             this.dataGridViewAllProducts.Name = "dataGridViewAllProducts";
@@ -83,9 +84,11 @@
             this.buttonHome.TabIndex = 38;
             this.buttonHome.Text = "Home";
             this.buttonHome.UseVisualStyleBackColor = false;
+            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
             // 
             // buttonAddProduct
             // 
+            this.buttonAddProduct.BackColor = System.Drawing.Color.Lime;
             this.buttonAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAddProduct.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonAddProduct.Location = new System.Drawing.Point(347, 348);
@@ -93,7 +96,7 @@
             this.buttonAddProduct.Size = new System.Drawing.Size(143, 33);
             this.buttonAddProduct.TabIndex = 37;
             this.buttonAddProduct.Text = "Add Product";
-            this.buttonAddProduct.UseVisualStyleBackColor = true;
+            this.buttonAddProduct.UseVisualStyleBackColor = false;
             this.buttonAddProduct.Click += new System.EventHandler(this.buttonAddProduct_Click);
             // 
             // comboBoxCategory
@@ -104,6 +107,7 @@
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(313, 28);
             this.comboBoxCategory.TabIndex = 36;
+            this.comboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategory_SelectedIndexChanged);
             // 
             // textBoxProductPrice
             // 
@@ -173,7 +177,7 @@
             // labelAddProduct
             // 
             this.labelAddProduct.AutoSize = true;
-            this.labelAddProduct.BackColor = System.Drawing.SystemColors.GrayText;
+            this.labelAddProduct.BackColor = System.Drawing.Color.Yellow;
             this.labelAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAddProduct.Location = new System.Drawing.Point(251, 98);
             this.labelAddProduct.Name = "labelAddProduct";
@@ -184,8 +188,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.GrayText;
+            this.label3.BackColor = System.Drawing.Color.Yellow;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(723, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 20);
@@ -215,7 +220,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1081, 565);
             this.Controls.Add(this.textBoxProductId);
             this.Controls.Add(this.labelPasseord);

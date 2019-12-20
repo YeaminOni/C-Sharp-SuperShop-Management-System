@@ -29,51 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
-            this.buttonClark = new System.Windows.Forms.Button();
-            this.buttonManazer = new System.Windows.Forms.Button();
-            this.buttonCustomer = new System.Windows.Forms.Button();
             this.Welcome = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // buttonClark
-            // 
-            this.buttonClark.Cursor = System.Windows.Forms.Cursors.No;
-            this.buttonClark.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClark.Location = new System.Drawing.Point(477, 204);
-            this.buttonClark.Margin = new System.Windows.Forms.Padding(6);
-            this.buttonClark.Name = "buttonClark";
-            this.buttonClark.Size = new System.Drawing.Size(178, 74);
-            this.buttonClark.TabIndex = 8;
-            this.buttonClark.Text = "Clerk";
-            this.buttonClark.UseVisualStyleBackColor = true;
-            this.buttonClark.Click += new System.EventHandler(this.buttonClark_Click);
-            // 
-            // buttonManazer
-            // 
-            this.buttonManazer.Cursor = System.Windows.Forms.Cursors.No;
-            this.buttonManazer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonManazer.Location = new System.Drawing.Point(287, 204);
-            this.buttonManazer.Margin = new System.Windows.Forms.Padding(6);
-            this.buttonManazer.Name = "buttonManazer";
-            this.buttonManazer.Size = new System.Drawing.Size(178, 74);
-            this.buttonManazer.TabIndex = 7;
-            this.buttonManazer.Text = "Manazer";
-            this.buttonManazer.UseVisualStyleBackColor = true;
-            this.buttonManazer.Click += new System.EventHandler(this.buttonManazer_Click);
-            // 
-            // buttonCustomer
-            // 
-            this.buttonCustomer.Cursor = System.Windows.Forms.Cursors.No;
-            this.buttonCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCustomer.Location = new System.Drawing.Point(97, 204);
-            this.buttonCustomer.Margin = new System.Windows.Forms.Padding(6);
-            this.buttonCustomer.Name = "buttonCustomer";
-            this.buttonCustomer.Size = new System.Drawing.Size(178, 74);
-            this.buttonCustomer.TabIndex = 6;
-            this.buttonCustomer.Text = "Customer";
-            this.buttonCustomer.UseVisualStyleBackColor = true;
-            this.buttonCustomer.Click += new System.EventHandler(this.buttonCustomer_Click);
             // 
             // Welcome
             // 
@@ -89,17 +47,18 @@
             this.Welcome.TabIndex = 5;
             this.Welcome.Text = "Welcome To Our Supershop ";
             this.Welcome.UseCompatibleTextRendering = true;
+            this.Welcome.Click += new System.EventHandler(this.Welcome_Click);
             // 
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.No;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(287, 204);
+            this.button1.Location = new System.Drawing.Point(577, 351);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 74);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Manager";
+            this.button1.Text = "LogIn Now";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.buttonManazer_Click);
             // 
@@ -107,12 +66,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonClark);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1081, 565);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonManazer);
-            this.Controls.Add(this.buttonCustomer);
             this.Controls.Add(this.Welcome);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Start";
@@ -124,10 +80,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonClark;
-        private System.Windows.Forms.Button buttonManazer;
-        private System.Windows.Forms.Button buttonCustomer;
         private System.Windows.Forms.Label Welcome;
         private System.Windows.Forms.Button button1;
     }
